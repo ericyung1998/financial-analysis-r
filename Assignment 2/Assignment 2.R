@@ -1,6 +1,6 @@
 ########################################################### Problem I ############################################################
 
-setwd("")  # set directory
+setwd("C:/Users/Eric/OneDrive/School/ISOM4530/Assignment/2")  # set directory
 
 library("evir")
 source("gpd_code.R")
@@ -84,7 +84,7 @@ VaR_GPD <- qgpd(1-0.005/Cond_p,xi_lower,threshold_lower,lambda_lower)
 
   # d. Monte Carlo S_DHSIRET
 
-VaR_Monte <- - quantile(S_DHSIRET,q) 
+VaR_Monte <- -quantile(S_DHSIRET,q) 
 
   # e. comparison
 
@@ -128,23 +128,27 @@ Y <- UTILITIES[ , 2]
 
 mu_X <- mean(X)
 sd_X <- sd(X)
+var_X <- var(X)
 
 mu_Y <- mean(Y)
 sd_Y <- sd(Y)
+var_Y <- var(Y)
 
 cor_XY <- cor(X,Y)
 
-round(c(mu_X,sd_X,mu_Y,sd_Y,cor_XY),4)
+round(c(mu_X,sd_X,var_X,mu_Y,sd_Y,var_Y,cor_XY),4)
 
 # 2. 2-percentiles of variables X + Y and X - Y, empirical estimate of percentiles
 
-# X + Y
+# estimated
 
-qnorm(0.02, mean=(mu_X+mu_Y), sd=sqrt(sd_X^2+sd_Y^2))
+qnorm(0.02, mean=(mu_X+mu_Y), sd=sqrt(var_X+var_Y+2*cor_XY*sd_X*sd_Y)) # X + Y
+qnorm(0.02, mean=(mu_X-mu_Y), sd=sqrt(var_X+var_Y-2*cor_XY*sd_X*sd_Y)) # X - Y
 
-# X - Y
+# empiracle
 
-qnorm(0.02, mean=(mu_X-mu_Y), sd=sqrt(sd_X^2+sd_Y^2))
+quantile(X+Y,0.02) # X + Y
+quantile(X-Y,0.02) # X - Y
 
 ########################################################### Problem III ##########################################################
 
