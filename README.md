@@ -11,3 +11,6 @@ Assignment 2
 
 Assignment 3
 - Learning Objectives: use R to perform statistical analysis (capital asset pricing model, Fama-French three-factor model, R-sqr variance, ANOVA, confidence interval, inference, least square regression, least absolute deviation regression, standardized//studentized residuals, prediction - interpolation/extrapolation, perturbed data)
+
+Assignment 4
+- Learning Objectives: use R to perform statistical analysis (polynomial LS regression, degree optimization, ANOVA, R-sqr, natural splines, predictions)
