@@ -14,3 +14,6 @@ Assignment 3
 
 Assignment 4
 - Learning Objectives: use R to perform statistical analysis (polynomial LS regression, degree optimization, ANOVA, R-sqr, natural splines, predictions)
+
+Assignment 6
+- Learning Objectives: use R to perform statistical analysis (ACF, PACF, AIC, ARIMA, Vasicek model, forecasting, prediction intervals,white noise)
