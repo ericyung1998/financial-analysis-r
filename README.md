@@ -17,3 +17,6 @@ Assignment 4
 
 Assignment 6
 - Learning Objectives: use R to perform statistical analysis (ACF, PACF, AIC, ARIMA, Vasicek model, forecasting, prediction intervals,white noise)
+
+Assingment 7
+- Learning Objectives: use R to perform statistical analysis (mixture normal distribution, kurtosis, conditional and unconditional VaR, unconditional expected shortfall ARCH, GARCH, volatility forecast)
