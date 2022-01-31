@@ -10,7 +10,7 @@ Assignment 2
 - Learning Objectives: use R to perform statistical analysis (generalized pareto distribution, Monte Carlo simulation, VaR expected shortfall, Q-Q plot, joint normality, quantiles, correlation, independence) of financial data
 
 Assignment 3
-- Learning Objectives: use R to perform statistical analysis (capital asset pricing model, Fama-French three-factor model, R-sqr variance, ANOVA, confidence interval, inference, least square regression, least absolute deviation regression, standardized//studentized residuals, prediction - interpolation/extrapolation, perturbed data)
+- Learning Objectives: use R to perform statistical analysis (capital asset pricing model, Fama-French three-factor model, R-sqr variance, ANOVA, confidence interval, inference, least square regression, least absolute deviation regression, standardized/studentized residuals, prediction - interpolation/extrapolation, perturbed data)
 
 Assignment 4
 - Learning Objectives: use R to perform statistical analysis (polynomial LS regression, degree optimization, ANOVA, R-sqr, natural splines, predictions)
